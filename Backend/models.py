@@ -6,8 +6,9 @@ DATABASE = SqliteDatabase("database.db")
 
 
 class Washroom(Model):
+
     # Address
-    address_for_id = IntegerField(unique=True)
+    address_for_washroom = IntegerField(unique=True)
     primary_address = CharField()
     city = CharField()
     province = CharField()
