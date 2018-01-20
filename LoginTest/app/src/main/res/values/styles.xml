@@ -10,7 +10,7 @@
 
     <style name="editText_style">
         <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/editText_background</item>
+        <item name="android:background">@drawable/edittextbackground</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">15dp</item>
@@ -18,7 +18,7 @@
     </style>
 
     <style name="button_style">
-        <item name="android:background">@drawable/button_back</item>
+        <item name="android:background">@drawable/buttonback</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">15dp</item>

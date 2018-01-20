@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/gradientbackground"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -23,8 +23,8 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_marginTop="80dp"
-            android:layout_height="170dp"
-            app:srcCompat="@drawable/logoShtHappens" />
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logoshthappens"/>
 
         <TextView
             style="@style/textView_style"
@@ -57,7 +57,6 @@
             android:onClick="sendMessage"/>
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
