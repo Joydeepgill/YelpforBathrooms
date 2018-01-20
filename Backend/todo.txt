@@ -1,0 +1,5 @@
+Join list of washrooms with array of reviews
+
+User authentication
+Paging
+Sort by closest

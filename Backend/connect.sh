@@ -1,0 +1,1 @@
+ssh -i "pair.pem" ubuntu@ec2-18-218-205-64.us-east-2.compute.amazonaws.com

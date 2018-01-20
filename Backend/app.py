@@ -2,7 +2,7 @@ from flask import Flask
 import db_handler
 from flask_restful import Api
 from models.review import SpecificReview, ReviewList, InsertReview
-
+from models.washroom import SpecificWashroom, WashroomList, InsertWashroom
 endpoint = "/api/v1"
 
 app = Flask(__name__)
@@ -17,6 +17,12 @@ api.add_resource(InsertReview, endpoint + '/review/add')
 #GET
 api.add_resource(ReviewList, endpoint +'/reviews/')
 
+#api
+api.add_resource(SpecificWashroom, endpoint + '/washroom/<int:washroom_id>')
+#POST
+api.add_resource(InsertWashroom, endpoint + '/washroom/add')
+#GET
+api.add_resource(WashroomList, endpoint + '/washrooms/')
 
 
 @app.route("/")
