@@ -21,28 +21,200 @@
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
-    <FrameLayout
+    <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="412dp"
+            android:apiKey="AIzaSyA4A79hgQhBi86mU46ue8KzTg9dY9zCjAY"
+            android:clickable="true" />
 
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"
             style="?metaButtonBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="113dp"
+            android:layout_height="150dp"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/black_overlay"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/scrollcolor">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_long"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Nearby Washrooms"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:ems="10"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/logoshthappens"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RatingBar
+                                android:layout_width="240dp"
+                                android:layout_height="50dp"
+                                android:rating="4.5"
+                                android:isIndicator="true"/>
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beautiful"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/logoshthappens"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RatingBar
+                                android:layout_width="240dp"
+                                android:layout_height="50dp"
+                                android:rating="4.5"
+                                android:isIndicator="true"/>
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beautiful"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/logoshthappens"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RatingBar
+                                android:layout_width="240dp"
+                                android:layout_height="50dp"
+                                android:rating="2"
+                                android:isIndicator="true"/>
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beautiful"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/logoshthappens"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RatingBar
+                                android:layout_width="240dp"
+                                android:layout_height="50dp"
+                                android:rating="5"
+                                android:isIndicator="true"/>
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beautiful"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/logoshthappens"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RatingBar
+                                android:layout_width="240dp"
+                                android:layout_height="50dp"
+                                android:rating="3.5"
+                                android:isIndicator="true"/>
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beautiful"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
             </ScrollView>
 
         </LinearLayout>
-    </FrameLayout>
+    </LinearLayout>
 
 </FrameLayout>

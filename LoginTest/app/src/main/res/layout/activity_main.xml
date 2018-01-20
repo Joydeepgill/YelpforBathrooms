@@ -29,7 +29,7 @@
         <TextView
             style="@style/textView_style"
             android:id="@+id/textView4"
-            android:text="Sh*t Happens"/>
+            android:text="Sht Happens"/>
 
         <TextView
             style="@style/textSmall_style"
