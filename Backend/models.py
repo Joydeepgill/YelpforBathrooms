@@ -26,7 +26,7 @@ class Washroom(Model):
 
 
 class Review(Model):
-    washroom = ForeignKeyField(Washroom, related_name="washrooms")
+    #washroom = ForeignKeyField(Washroom, related_name="washrooms")
     rating = IntegerField()
     comment = TextField(default="")
     created_at = DateTimeField(default=datetime.datetime.now)
