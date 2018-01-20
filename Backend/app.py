@@ -9,8 +9,12 @@ app = Flask(__name__)
 api = Api(app)
 
 # Reviews
+
+#GET
 api.add_resource(SpecificReview, endpoint + '/review/<int:review_id>')
+#POST
 api.add_resource(InsertReview, endpoint + '/review/add')
+#GET
 api.add_resource(ReviewList, endpoint +'/reviews/')
 
 
@@ -22,4 +26,4 @@ def index():
 
 if __name__ == '__main__':
     db_handler.initialize("database.db")
-    app.run(debug=True, port=8000, host='0.0.0.0')
+    app.run(debug=True, port=80, host='0.0.0.0')

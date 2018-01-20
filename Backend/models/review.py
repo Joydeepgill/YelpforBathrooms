@@ -53,7 +53,11 @@ class InsertReview(Resource):
         connection.commit()
         connection.close()
     def post(self):
-        data = InsertReview.parser.parse_args()
+        try:
+            data = InsertReview.parser.parse_args()
+        except:
+            return example_text
+
         review = {'washroom_id': data['washroom_id'], 'rating': data['rating'], 'comment': data['comment'],
                   'created_at': datetime.datetime.now()}
         print(review)
