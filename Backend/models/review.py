@@ -1,6 +1,7 @@
-from flask_restful import Resource, reqparse, inputs
+from flask_restful import Resource, reqparse
 import json
 from flask.ext.api import status
+from models.washroom import SpecificWashroom
 
 import datetime
 import sqlite3
