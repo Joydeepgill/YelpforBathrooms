@@ -6,8 +6,9 @@ DATABASE = SqliteDatabase("database.db")
 
 
 class Washroom(Model):
+
     # Address
-    address_for_id = IntegerField(unique=True)
+    address_for_washroom = IntegerField(unique=True)
     primary_address = CharField()
     city = CharField()
     province = CharField()
@@ -25,7 +26,7 @@ class Washroom(Model):
 
 
 class Review(Model):
-    washroom = ForeignKeyField(Washroom, related_name="washrooms")
+    #washroom = ForeignKeyField(Washroom, related_name="washrooms")
     rating = IntegerField()
     comment = TextField(default="")
     created_at = DateTimeField(default=datetime.datetime.now)

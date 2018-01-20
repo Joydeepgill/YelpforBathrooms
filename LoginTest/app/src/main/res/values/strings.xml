@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginTest</string>
+
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="dummy_button">Hey There!</string>
+    <string name="dummy_content">Welcome!</string>
+</resources>
