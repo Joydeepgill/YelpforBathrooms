@@ -26,4 +26,4 @@ def index():
 
 if __name__ == '__main__':
     db_handler.initialize("database.db")
-    app.run(debug=True, port=80, host='0.0.0.0')
+    app.run(debug=True, port=8000, host='0.0.0.0')
