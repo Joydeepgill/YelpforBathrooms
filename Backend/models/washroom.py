@@ -118,6 +118,7 @@ class WashroomList(Resource):
         query = "SELECT * FROM {table}".format(table=TABLE_NAME)
 
         if(finding_closest):
+            query = "SELECT * FROM {table}".format(table=TABLE_NAME)
             #print("lat = " + str(start_lat) + "lng = " + str(start_long))
             ##SQL Closest based on long and lat
             #query = "SELECT latitude, longitude, SQRT(POW(69.1 * (latitude - [{start_lat}]), 2) + POW(69.1 * ([{start_lng}] - longitude) * COS(latitude / 57.3), 2)) AS distance FROM washrooms ORDER BY distance;".format(start_lat=start_lat, start_lng=start_long)
