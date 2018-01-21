@@ -26,7 +26,6 @@ class SpecificReview(Resource):
     def get(self, review_id):
         review = self.find_by_id(review_id)
         if review:
-            print("Found")
             return review
         return status.HTTP_404_NOT_FOUND
 
@@ -61,7 +60,6 @@ class InsertReview(Resource):
 
         review = {'washroom_id': data['washroom_id'], 'rating': data['rating'], 'comment': data['comment'],
                   'created_at': datetime.datetime.now()}
-        print(review)
         InsertReview.insert(review)
         return status.HTTP_200_OK
 
