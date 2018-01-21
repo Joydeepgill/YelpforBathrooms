@@ -21,12 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainPage"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_main_page"
-            android:theme="@style/FullscreenTheme" />
-        <activity android:name=".Directions"></activity>
+        <activity android:name=".Directions" />
+        <activity android:name=".MapsPage"></activity>
     </application>
 
 </manifest>
