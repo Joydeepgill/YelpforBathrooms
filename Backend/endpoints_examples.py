@@ -7,7 +7,7 @@ Send POST request to /api/v1/washroom/add
     "postal_code": "M5T 3A1",
 	"longitude": -43.6586389,
 	"latitude": -79.3992498,
-	"comments": "Good stuff!"
+	"comments": "Cool!"
 }
 
 Show all existing washrooms
@@ -27,7 +27,7 @@ Example response:
             "postal_code": "M2W1W4",
             "longitude": -79.3980115,
             "latitude": -79.3980115,
-            "comments": "Good stuff!",
+            "comments": "Cool!",
             "created_at": "2018-01-20 13:11:28.918964"
         },
         {
@@ -38,7 +38,7 @@ Example response:
             "postal_code": "M2W1W4",
             "longitude": -79.3980115,
             "latitude": -79.3980115,
-            "comments": "Good stuff!",
+            "comments": "Cool!"
             "created_at": "2018-01-20 13:11:28.918964"
         }]
 }
@@ -82,7 +82,7 @@ Add new review
 Send POST request to /api/v1/review/add
 {
 	"rating":5,
-	"comment":"Very nice!",
+	"comment":"cool!!",
 	"washroom_id":2
 }
 
