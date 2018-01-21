@@ -19,7 +19,6 @@ android {
 }
 
 dependencies {
-    compile 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
     compile 'com.google.android.gms:play-services-maps:11.8.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'

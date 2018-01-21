@@ -1,6 +1,7 @@
 package com.example.jameslu.logintest;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -149,6 +150,10 @@ public class MainPage extends AppCompatActivity {
         // Schedule a runnable to display UI elements after a delay
         mHideHandler.removeCallbacks(mHidePart2Runnable);
         mHideHandler.postDelayed(mShowPart2Runnable, UI_ANIMATION_DELAY);
+    }
+    public void sendMessage(View view){
+        Intent intent = new Intent(MainPage.this, Directions.class);
+        startActivity(intent);
     }
 
     /**
