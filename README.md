@@ -4,7 +4,7 @@
     
    This is a android application (prototype) which was created in order to help users' find
  public washrooms near their current location. This app was made for various types of users' in mind (i.e: male, female, infants, 
- students, nursing mothers, people with disabilites, etc). 
+ students, nursing mothers, people with disabilites, etc). This can also be viewed on [Devpost](https://devpost.com/software/public-restroom-finder).
 
 ### Contributors: 
 - asitu 
