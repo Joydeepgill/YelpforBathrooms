@@ -7,5 +7,3 @@
  students, nursing mothers, people with disabilites, etc). 
 
 Screenshots: 
-
-![alt text](http://url/to/29261825_10210815783937960_3741395794511527936_n.png)
